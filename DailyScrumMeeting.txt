@@ -1,0 +1,280 @@
+TEAM "BuddyRecipe" - Dailyscrum
+<< current date goes here >>
+1. What I have done / not done since last Scrum?
+2. What I plan to do from this scrum to next? (next 24 hours)
+3. Where do I need assistance? What do I need to figure out?
+
+
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+2024/02/13 KARINA
+1. Done / not done since last scrum:
+- discussed porject ideas
+- created trello board
+- working on Proposal
+2. To do until next Scrum:
+- finish porposal
+- setup the initial project
+- help to setup the database
+3. Need assistance / figure things out
+- watch tutorials
+
+2024/02/13 BENJAMIN
+
+
+2024/02/13 AMINE
+1. What I have done / not done since last Scrum?
+2. What I plan to do from this scrum to next? (next 24 hours)
+- Discuss porject ideas, functionnalitiesm, api's, and how it will operate.
+- Deisgn a use case diagram.
+- Write a project proposal draft.
+- Create GitHub Repo
+3. Where do I need assistance? What do I need to figure out?
+
+
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+2024/02/14 KARINA
+1. Done / not done since last scrum:
+- Finished putting togheter info for proposal
+2. To do until next Scrum:
+- Start working on coding
+3. Need assistance / figure things out
+- Watch more tutorials- 
+
+2024/02/14 Benjamin
+1. Done / Not done
+-Not done fix DB design
+-Not done better mockups
+2. To do
+-Fix DB design
+-hopefully, better mockups
+3. Need assistance
+-figure out better mockup design
+
+2024/02/14 AMINE
+1. What I have done / not done since last Scrum?
+- Discussed porject ideas, functionnalitiesm, api's, and how it will operate.
+- Deisgned a use case diagram.
+- Wrote a project proposal draft.
+- Created the GitHub Repo
+2. What I plan to do from this scrum to next? (next 24 hours)
+- Create the Azure database server/database and set it up in the repo
+- tweak the case diagram of the proposal.
+3. Where do I need assistance? What do I need to figure out?
+
+
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+2024/02/18 KARINA
+1. Done / not done since last scrum:
+- Started to work on the Search Window
+- box for searching - not formatting
+- button for searching - not formatting
+- Back-end implementing the login simulating the DB using a list, due to not having the connection yet.
+2. To do until next Scrum:
+- Keep working on the Search Window
+3. Need assistance / figure things out
+- 
+-
+
+
+2024/02/18 BENJAMIN
+1. Done / not done since last scrum:
+- Haven't started anything since proposal
+- Been busy with Other class sry
+2. To do until next Scrum:
+- Research loading windows and content?
+- Hopefully Login n Regi ASAP
+3. Need assistance / figure things out
+- I'll be doing a lot of research today as i get started in this project
+- Windows? Pages? Pop ups?
+
+
+2024/02/18 AMINE
+1. What I have done / not done since last Scrum?
+- Created the Azure database server/database and set it up in the project
+- Tweaked the case diagram of the proposal.
+2. What I plan to do from this scrum to next? (next 24 hours)
+- Review code and resources.
+- Study for the MidTerm that's tomorrow.
+- Busy with urgent deadlines for our other course.
+3. Where do I need assistance? What do I need to figure out?
+
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+2024/02/20 KARINA
+1. Done / not done since last scrum:
+- Started to work on the Search Window
+- box for searching - not formatting
+- button for searching - not formatting
+- Back-end implementing the login simulating the DB using a list, due to not having the connection yet.
+2. To do until next Scrum:
+- Keep working on the Search Window
+3. Need assistance / figure things out
+
+
+2024/02/20 BENJAMIN
+1. Done / not done since last scrum:
+- Researched Frames, Dialogs and Pages
+- Started designing content based on frames
+2. To do until next Scrum:
+- Redesign Content based on dialogs
+- add Dblogic to login n regi
+3. Need assistance / figure things out
+
+
+2024/02/20 AMINE
+1. What I have done / not done since last Scrum?
+- Review code and resources.
+2. What I plan to do from this scrum to next? (next 24 hours)
+- Start working on Edamam Api integration
+3. Where do I need assistance? What do I need to figure out?
+
+
+---------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------
+
+2024/02/21 KARINA
+1. Done / not done since last scrum:
+- Added a few code changes in ViewRecipe
+- Review colleagues code.
+2. To do until next Scrum:
+- Resolve issues I'm having connecting to the DB
+- Check what I've implemented and make fixes and improvements where needed.
+3. Need assistance / figure things out
+- 
+-
+
+
+2024/02/21 BENJAMIN
+1. Done / not done since last scrum:
+- Login n Regi
+- Logout
+-  tested styling
+2. To do until next Scrum:
+- Users can manage and delete their recipes
+3. Need assistance / figure things out
+- 
+-
+
+
+2024/02/21 AMINE
+1. What I have done / not done since last Scrum?
+- Implemented the CreateRecipeWindow.
+- Altered the recipe table to accomodate the CreateRecipe feature.
+2. What I plan to do from this scrum to next? (next 24 hours)
+- Tweak the CreateRecipeWindow.
+- Start working on Edamam Api integration for the Food/Ingredient lookup feature.
+3. Where do I need assistance? What do I need to figure out?
+
+---------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------
+
+2024/02/23 KARINA
+1. Done / not done since last scrum:
+- Solved my connecting to the DB
+- Checked what I've implemented
+- Review DB
+- Updated the search script
+2. To do until next Scrum:
+- Review functionaliteis (QC)
+- 
+3. Need assistance / figure things out
+- 
+-
+
+
+2024/02/23 BENJAMIN
+1. Done / not done since last scrum:
+- Registration Validation / hide password
+- added Delete function to view recipe
+- tested Food Databse API
+- started on adding ingredients & recipeIngredients
+2. To do until next Scrum:
+- merge branch into main, finish/fix adding ingredient to DB
+- clean up styling
+3. Need assistance / figure things out
+- 
+-
+
+
+2024/02/23 AMINE
+1. What I have done / not done since last Scrum?
+- Tweaked the CreateRecipeWindow.
+2. What I plan to do from this scrum to next? (next 24 hours)
+- Start working on the ingredient fetch and display feature of the ViewRecipe Window.
+3. Where do I need assistance? What do I need to figure out?
+
+---------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------
+2024/02/26 KARINA
+1. Done / not done since last scrum:
+- coding for inserting image to the create recipe
+- coding for showing image to the show single recipe
+2. To do until next Scrum:
+- WIP - Find a solution for the windows (to look good when opening)
+- Look into the unit testing requirement
+3. Need assistance / figure things out
+- 
+-
+
+
+2024/02/26 BENJAMIN
+1. Done / not done since last scrum:
+- finished create recipe/add ingredient
+- fixed some styling
+2. To do until next Scrum:
+- bug testing and clean up
+3. Need assistance / figure things out
+- figure out what need improvement & fixing
+
+2024/02/26 Amine
+1. Done / not done since last scrum:
+- Tried to implement the ingredient fetch and display feature of the ViewRecipe Window. 
+2. To do until next Scrum:
+- Small App Design improvements
+- Start the PowerPoint
+3. Need assistance / figure things out
+- figure out why the ViewRecipe cannot fetch the ingredients properly.
+
+---------------------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------------------
+
+2024/02/27 KARINA
+1. Done / not done since last scrum:
+- created 10 unit test
+- finished image upload and view
+- created class general for general methoods
+- general code improvement (space and identantion)
+2. To do until next Scrum:
+- test features
+- help wiht ppt
+3. Need assistance / figure things out
+
+
+2024/02/27 BENJAMIN
+1. Done / not done since last scrum:
+- lots of bug fixing
+- so much bug fixing
+2. To do until next Scrum:
+- finish update recipe function
+- assist with power point
+3. Need assistance / figure things out
+- figure out what need improvement & fixing
+-
+
+
+2024/02/27 Amine
+1. Done / not done since last scrum:
+- Small App Design improvements
+- Near completed the PowerPoint
+2. To do until next Scrum:
+- Small App Design improvements
+- Complete the PowerPoint
+3. Need assistance / figure things out
+-

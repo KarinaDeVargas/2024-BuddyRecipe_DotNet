@@ -1,0 +1,49 @@
+﻿<Window x:Class="RecipeBuddy.ViewRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeBuddy"
+        mc:Ignorable="d"
+        Title="ViewRecipe" Height="470" Width="800"
+        Icon="logo.ico">
+    <Grid Background="#09814A">
+        <TextBlock x:Name="txtbRecipeName" HorizontalAlignment="Left" Margin="17,85,0,0" TextWrapping="Wrap" Text="Title" VerticalAlignment="Top" Height="26" Width="247" Foreground="#FFB9B200" FontSize="20" FontWeight="Bold" FontFamily="Global Sans Serif"/>
+        <TextBlock x:Name="txtbRecipeDescription" Background="#FFBDC71B" HorizontalAlignment="Left" Height="39" Margin="269,80,0,0" TextWrapping="Wrap" Text="The perfect combination.." VerticalAlignment="Top" Width="354" FontFamily="Segoe Print"/>
+        <TextBlock x:Name="txtbRecipeInstructionsLabel" HorizontalAlignment="Left" Margin="17,120,0,0" TextWrapping="Wrap" Text="Instructions" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" FontFamily="Global Sans Serif"/>
+        <TextBlock x:Name="txtbRecipeInstructions" Background="#FFBDC71B" HorizontalAlignment="Left" Margin="17,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="274" Width="227" FontFamily="Segoe Print"/>
+        <!--Update section -->
+        <TextBox x:Name="TbxName" Visibility="Hidden" HorizontalAlignment="Left" Margin="17,85,0,0" TextWrapping="Wrap" Text="Title" VerticalAlignment="Top" Height="26" Width="247" Foreground="#FFB9B200" FontSize="20" FontWeight="Bold" FontFamily="Global Sans Serif"/>
+        <TextBox x:Name="TbxDescrip" Visibility="Hidden" Background="#f2f4f4" HorizontalAlignment="Left" Height="39" Margin="269,80,0,0" TextWrapping="Wrap" Text="The perfect combination.." VerticalAlignment="Top" Width="514" FontFamily="Segoe Print"/>
+        <TextBox x:Name="TbxInstruc" Visibility="Hidden" Background="#f2f4f4" HorizontalAlignment="Left" Margin="17,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="274" Width="227" FontFamily="Segoe Print"/>
+        <ListView x:Name="dgRecipeView" Margin="269,141,17,19" MouseRightButtonDown="dgRecipeView_MouseRightButtonDown">
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Add" Click="AddMenuItem_Click"/>
+                    <MenuItem Name="ClickDelete" Header="Delete" Click="DeleteMenuItem_Click"/>
+                </ContextMenu>
+            </ListView.ContextMenu>
+            <ListView.Resources>
+                <Style TargetType="{x:Type GridViewColumnHeader}">
+                    <Setter Property="Background" Value="LightYellow" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="BorderThickness" Value="0,0,1,2" />
+                    <Setter Property="BorderBrush" Value="Black" />
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </ListView.Resources>
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Ingredient" DisplayMemberBinding="{Binding Ingredient}" Width="150"/>
+                        <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding Quantity}" Width="250" />
+                        <GridViewColumn Header="Unit" DisplayMemberBinding="{Binding Unit}" />
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Name="BtnDelete" Click="BtnDelete_Click" Content="Delete" Background="#FFBDC71B" HorizontalAlignment="Left" Margin="344,22,0,0" VerticalAlignment="Top" Height="36" Width="56"/>
+        <Button Name="BtnUpdate" Click="BtnUpdate_Click" Content="Update" Background="#FFBDC71B" HorizontalAlignment="Left" Margin="269,22,0,0" VerticalAlignment="Top" Height="36" Width="61"/>
+        <Image x:Name="RecImage" Stretch="UniformToFill" Margin="638,7,15,302" RenderTransformOrigin="0.5,0.5" ></Image>
+    </Grid>
+</Window>

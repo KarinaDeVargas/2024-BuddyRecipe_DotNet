@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeBuddy", "RecipeBuddy.csproj", "{A6D08C30-EDC8-437B-A716-6456B425F38F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8DC5CAC9-2931-475E-9B86-A1A0AB7B47B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeBuddyUnitTests", "..\RecipeBuddyUnitTests\RecipeBuddyUnitTests.csproj", "{F69BC83E-7137-4997-9506-F42C2D5A17D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6D08C30-EDC8-437B-A716-6456B425F38F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6D08C30-EDC8-437B-A716-6456B425F38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6D08C30-EDC8-437B-A716-6456B425F38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6D08C30-EDC8-437B-A716-6456B425F38F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F69BC83E-7137-4997-9506-F42C2D5A17D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F69BC83E-7137-4997-9506-F42C2D5A17D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F69BC83E-7137-4997-9506-F42C2D5A17D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F69BC83E-7137-4997-9506-F42C2D5A17D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26FD2903-5207-4451-8D69-CA74FEDB53D3}
+	EndGlobalSection
+EndGlobal

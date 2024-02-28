@@ -1,0 +1,73 @@
+﻿<Window x:Class="RecipeBuddy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeBuddy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Icon="logo.ico">
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" Name="Menu" Background="#2D4739" Foreground="#F2F4F4">
+            <Menu.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <DockPanel HorizontalAlignment="Stretch"/>
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+            <MenuItem Header="Create a new recipe" Click="CreateNewRecipe_Click"/>
+            <MenuItem Header="My recipes" Click="MyRecipes_Click"/>
+            <MenuItem Header="All recipes" Click="SearchMenu_Click"/>
+            <Separator />
+            <MenuItem Name="BtnLogout" Click="BtnLogout_Click" Header="Logout" HorizontalAlignment="Right" Margin="0,0,20,0"/>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom" Background="#e3b505">
+            <StatusBarItem>
+                <TextBlock Name="LblStatus" />
+            </StatusBarItem>
+        </StatusBar>
+        <Grid Background="#09814A">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="180"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="1" Grid.Row="1" FontSize="20" Text="Recipe Buddy" FontWeight="Bold" />
+            <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="0,24,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="128" FontWeight="Bold"><Run Language="en-ca" Text="Search for a recipe"/></TextBlock>
+            <TextBox x:Name="inputSearch" HorizontalAlignment="Center" Margin="0,44,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170" Height="23" Grid.Column="1"/>
+            <Button x:Name="btnSearch" Grid.Column="1" Content="Search" HorizontalAlignment="Left" Margin="5,79,0,0" Grid.Row="3" VerticalAlignment="Top" Click="Search_Click" FontWeight="Bold"/>
+            <Button x:Name="btnClear" Grid.Column="1" Content="Clear Search" HorizontalAlignment="Left" Margin="5,107,0,0" Grid.Row="3" VerticalAlignment="Top" Click="ClearSearch" FontWeight="Bold"/>
+
+            <DataGrid x:Name="dgRecipes" Grid.Column="2" Grid.Row="3" SelectionChanged="OnRecipeRowSelected">
+                <!--d:ItemsSource="{d:Binding Source=Recipes}"-->
+                <DataGrid.Resources>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="LightYellow" />
+                        <Setter Property="FontWeight" Value="Bold" />
+                        <Setter Property="BorderThickness" Value="0,0,1,2" />
+                        <Setter Property="BorderBrush" Value="Black" />
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    </Style>
+                    <Style TargetType="{x:Type TextBlock}" x:Key="WrapText">
+                        <Setter Property="TextWrapping" Value="Wrap"/>
+                        <Setter Property="MaxHeight" Value="100" />
+                    </Style>
+                </DataGrid.Resources>
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name" Binding="{Binding recipeName}" Width="150" ElementStyle="{StaticResource WrapText}"/>
+                    <DataGridTextColumn Header="Description" Binding="{Binding description}" Width="250" ElementStyle="{StaticResource WrapText}"/>
+                    <DataGridTextColumn Header="Instructions" Binding="{Binding instructions}" Width="*" ElementStyle="{StaticResource WrapText}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </DockPanel>
+</Window>
